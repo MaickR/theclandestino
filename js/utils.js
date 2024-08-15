@@ -448,6 +448,38 @@ buyButtons.forEach(function(button) {
 });
 
 
+var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    initialSlide: 0,
+    speed: 600,
+    preventClicks: true,
+    slidesPerView: 3, // Mostrar 3 slides por defecto
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
+        slideShadows: true,
+    },
+
+
+    on: {
+        click(event) {
+            swiper.slideTo(this.clickedIndex);
+        },
+
+        
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+
+
 
 
 
