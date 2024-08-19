@@ -9072,145 +9072,198 @@ button {
 
 /** HAMPER CARD*/
 
-/* Estilos para Swiper.js */
-.swiper.hs {
-  width: 100%;
-  padding: 50px 0;
+/** SWIPER HAMPER  */
+
+.swiper-container.h-wrapper {
+
+  padding-bottom: 25px;
 }
 
-.swiper-slide {
-  position: relative;
-  width: 320px;
-  aspect-ratio: 3/4;
-  border-radius: 14px;
-  border: 1px solid rgba(177, 177, 177, .4);
-  overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+.h-wrapper {
+    max-width: 1130px;
+    margin: auto;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-  user-select: none;
-  transition: .3s;
+.swiper-wrapper {
+    display: flex;
 }
 
-.swiper-slide img:hover {
-  transform: scale(1.1); /* Zoom en la imagen al hacer hover */
+.h-card {
+    position: relative;
+    width: calc(33% - 13px);
+    border-radius: 3px;
+    background-color: #1c1c1c;
+    overflow: hidden;
 }
 
-.swiper-pagination{
-  -swiper-pagination-bottom:-6px
-}
-.swiper-pagination-bullet-active{
-  background-color:#f4a261
+.h-card img {
+    width: 100%;
+    border-radius: 3px;
+    transition: .3s;
 }
 
-/* Ocultar el contenido adicional por defecto */
+.h-card img:hover {
+    transform: scale(1.1);
+}
+
 .h-content {
-  position: absolute;
-  width: 100%;
-  background: rgba(28, 28, 28, 0.85); /* Fondo oscuro para el contenido */
-  bottom: -100%; /* Posicionar fuera de la vista */
-  padding: 10px 20px 22px;
-  box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .15);
-  transition: .3s ease-in-out;
+    position: absolute;
+    width: 100%;
+    background: #1c1c1c;
+    bottom: -53%;
+    padding: 10px 20px 22px;
+    box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .15);
+    transition: .3s;
 }
 
-.swiper-slide:hover .h-content {
-  bottom: 0; /* Mostrar el contenido al hacer hover */
+.h-card:hover .h-content {
+    bottom: -15px;
 }
 
-.h-row {
+.h-content .h-row, .h-content .h-row .h-buttons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
-.h-details span {
-  font-size: 22px;
-  font-weight: 500;
+.h-content .h-row .h-details span {
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.h-details p {
-  color: #f5f5f5;
-  font-size: 17px;
-  font-weight: 400;
+.h-content .h-row .h-details p {
+    color: #f5f5f5;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .h-price {
-  color: #f5f5f5;
-  font-size: 25px;
-  font-weight: 600;
+  padding-top: 15px;
 }
 
-.h-buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
+h3#h-title {
+  font-family: 'Libre Bodoni';
+  font-size: 18px;
 }
 
-.h-buttons button {
-  width: 100%;
-  outline: 0;
-  padding: 10px 0;
-  font-size: 17px;
-  border-radius: 3px;
-  color: #1c1c1c;
-  font-weight: 900;
-  background-color: #f4a261;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: .3s ease-in;
+.h-content .h-row .h-price {
+    color: #f5f5f5;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.h-content .h-buttons {
+    margin-top: 20px;
+}
+
+.h-content .h-buttons button {
+    width: 100%;
+    outline: 0;
+    padding: 10px 0;
+    font-size: 17px;
+    border-radius: 3px;
+    color: #1c1c1c;
+    font-weight: 900;
+    background-color: #f4a261;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease-in;
+}
+
+.h-details {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .h-buttons button:hover {
-  background-color: #cf8c55;
+    background-color: #cf8c55;
 }
 
-/* Ajustes de responsive design */
-@media (max-width: 1100px) {
-  .swiper-slide {
-    width: 300px;
-  }
+/* Ajustes para los controles de Swiper */
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5; /* Reducido para que no interfiera con las tarjetas */
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  border-radius: 120px; /* Forma circular */
+  color: #eee; /* Color del icono */
+  font-size: 3rem; /* Tamaño del icono */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 900px) {
-  .swiper-slide {
-    width: 250px;
-  }
+.swiper-button-prev {
+  left: auto; /* Ajuste para mover el botón izquierdo fuera de las tarjetas */
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 
-@media (max-width: 700px) {
-  .swiper-slide {
-    width: 230px;
-  }
+.swiper-button-next {
+  right: 0px; /* Ajuste para mover el botón derecho fuera de las tarjetas */
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 
-@media (max-width: 610px) {
-  .swiper-slide {
-    width: 200px;
-  }
+.swiper-button-next:after, .swiper-button-prev:after {
+   display: none;
 }
 
-@media (max-width: 770px) {
-  .h-details span,
-  .h-price {
-    font-size: 15px;
-  }
-
-  .h-details p {
-    font-size: 14px;
-  }
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  opacity: 1;
 }
 
-@media (max-width: 580px) {
-  .h-buttons button {
-    padding: 8px 0;
-    font-size: 15px;
-  }
+.swiper-button-prev ion-icon, .swiper-button-next ion-icon {
+  pointer-events: none; /* Asegura que los iconos no interfieran con los clics en los botones */
 }
+
+.swiper-pagination.h-pagination{
+  color: #ccc;
+  bottom: -5px;
+}
+
+@media (max-width: 1024px) {
+  .h-card {
+      width: calc(50% - 13px); /* Se muestran 2 cards por fila */
+  }
+
+}
+
+@media(max-width: 770px) {
+    .h-content .h-row .h-details span,
+    .h-content .h-row .h-price {
+        font-size: 20px;
+    }
+    .h-content .h-row .h-details p {
+        font-size: 14px;
+    }
+
+    
+}
+
+@media(max-width: 580px) {
+  .h-card {
+    width: 100%; /* Se muestra 1 card por fila */
+}
+
+.h-wrapper {
+    max-width: 90%; /* Asegura que las cards no se extiendan demasiado en pantallas móviles */
+}
+
+.swiper-slide {
+    width: 100%; /* Asegura que la card ocupe todo el ancho disponible */
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none; /* Oculta las flechas de navegación para maximizar el espacio en móviles */
+}
+}
+
+
+
+/*! SWIPER HAMPER  */
 
 
 

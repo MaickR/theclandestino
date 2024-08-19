@@ -448,36 +448,49 @@ buyButtons.forEach(function(button) {
 });
 
 
-var swiper = new Swiper(".swiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    initialSlide: 0,
-    speed: 600,
-    preventClicks: true,
-    slidesPerView: 3, // Mostrar 3 slides por defecto
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.5,
-        slideShadows: true,
-    },
 
-
-    on: {
-        click(event) {
-            swiper.slideTo(this.clickedIndex);
+function initSwiper() {
+    var swiperPaginationType;
+  
+    // Detecta el tamaño de la pantalla y ajusta la paginación
+    if (window.innerWidth <= 580) { // Móviles (hasta 580px)
+        swiperPaginationType = 'progressbar';
+    } else { // Tabletas y escritorio
+        swiperPaginationType = 'fraction';
+    }
+  
+    // Inicializa el Swiper con la configuración adecuada
+    const swiper = new Swiper('.mySwiper', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 13,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-
-        
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
+        pagination: {
+            el: ".swiper-pagination",
+            type: swiperPaginationType, // Pagina según el dispositivo
+        },
+        breakpoints: {
+            580: {
+                slidesPerView: 1,
+            },
+            770: {
+                slidesPerView: 2,
+            },
+            1130: {
+                slidesPerView: 3,
+            },
+        }
+    });
+  }
+  
+  // Ejecuta la función al cargar la página
+  window.addEventListener('load', initSwiper);
+  
+  // Reejecuta la función cuando la ventana se redimensiona
+  window.addEventListener('resize', initSwiper);
 
 
 

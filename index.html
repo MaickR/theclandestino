@@ -70,6 +70,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.css" integrity="sha512-jKZw2chMmawsLKS6J3OXDn6gB388f6ux5qYtQrDFpf5pMDZiY2rJYoPNEucpGVkQiOHf66ISnEYi8NgPvF/gtg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
          
       <!--* Swiper -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/css/swiper.min.css" integrity="sha512-fdqtP6ON3+aY99hXpjnTLSsX8Av15gClqnNWzTqeWNFBduUWakC1Gm2rWXmAFsHqL/R+XfXslLSoJnd61J7UlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       
       <!--* Magnific Popup   -->
@@ -108,7 +109,7 @@
 <div id="preloader" class="preloader-container" role="status" aria-live="polite" aria-label="Loading">
     <div id="preloader-status">
         <div class="preloader-position">
-            <img src="img/Clandestino_no_bg.svg" alt="Clandestino's Logo" aria-label="Clandestino's Logo">
+            <img src="img/Clandestino.png" alt="Clandestino's Logo" aria-label="Clandestino's Logo" loading="lazy">
         </div>
     </div>
 </div>
@@ -131,8 +132,8 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand hidden-sm hidden-md hidden-lg logo active" href="#home">
-              <img alt="Clandestino's Logo" class="logo-light" src="img/Clandestino_menu.svg"> 
-              <img alt="Clandestino's Logo" class="logo-dark" src="img/Clandestino_menu.svg">
+              <img alt="Clandestino's Logo" class="logo-light" src="img/Clandestino_menu.svg" loading="lazy"> 
+              <img alt="Clandestino's Logo" class="logo-dark" src="img/Clandestino_menu.svg" loading="lazy">
             </a>
           </div>
           <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -149,8 +150,8 @@
               <li><a href="#services">Services</a></li>
               <li class="hidden-xs">
                 <a class="navbar-brand logo" href="#home">
-                  <img alt="Clandestino's Logo" class="logo-light" src="img/Clandestino_menu.svg"> 
-                  <img alt="Clandestino's Logo" class="logo-dark" src="img/Clandestino_menu.svg">
+                  <img alt="Clandestino's Logo" class="logo-light" src="img/Clandestino_menu.svg" loading="lazy" > 
+                  <img alt="Clandestino's Logo" class="logo-dark" src="img/Clandestino_menu.svg" loading="lazy">
                 </a>
               </li>
               <li><a href="#blog">SWC</a></li>
@@ -334,7 +335,7 @@
   
     <div class="halves-about">
         <div class="half-about-1 about-bg-1">
-            <a class="popup-photo" href="img/about/clandestino-taste-01.webp" title="The Clandestino">
+            <a class="popup-photo" href="img/about/clandestino-taste-01.webp" title="The Clandestino" >
                 <span class="caption-right">Watch me!</span>
             </a>
         </div>
@@ -405,15 +406,15 @@
 <!-- Modal structure -->
 <div id="imageModal" class="wine-modal">
     <span class="wine-close">&times;</span>
-    <img class="wine-modal-content" id="modalImage">
+    <img class="wine-modal-content" id="modalImage" loading="lazy">
   </div>
  
  
  <!--! WINES  --> 
 
- <!--! GIFT  -->
+ <!--* BASKETS  -->
 
- <section id="hampers" class="section-all bg-dark">
+ <section id="hampers" class="section-all bg-dark" aria-labelledby="gift-basket">
     <div class="divider-xl"></div>
     <div class="container">
         <div class="extra-margin-container">
@@ -421,19 +422,19 @@
                 <div class="col-lg-12">
                     <div class="section-title section-title-dark">
                         <h2 class="section-title-line section-title-line-dark">
-                            <span> Signature Hampers</span>
+                            <span> Curated Elegance</span>
                         </h2>
                     </div>
                     <div class="divider-m"></div>
                     <h2 class="hero-heading hero-heading-dark modified">
-                        The <span>Savor Life's Finest</span>
+                         <span>Indulge in Life’s Finest</span>
                     </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     
-                    <div class="the-line"></div>
+                    <div class="the-line" role="separator"></div>
                 </div>
             </div>
             <div class="row">
@@ -441,13 +442,14 @@
                     <div class="testimonial">
                         <div class="inner">
                             <div class="quote">
-                                <blockquote class="quote-inner">
-                                    Elevate your gatherings with our exclusive wine hampers, meticulously curated to 
-                                    bring you the finest selection of premium wines and gourmet delicacies. Choose 
-                                    from our pre-arranged hampers or create your own, tailored to your unique taste and 
-                                    preferences. Whether you're celebrating a special occasion or simply savoring life's 
-                                    moments, our hampers are designed to offer an unforgettable experience. Dive into a 
-                                    world of luxury, where every sip and bite reflects sophistication and style
+                                <blockquote class="quote-inner" aria-label="basket-description">
+                                    Enhance every moment with our carefully curated wine hampers, 
+                                    featuring a selection of premium wines and gourmet treats. 
+                                    Whether celebrating or simply enjoying life, our hampers are 
+                                    crafted to deliver a touch of luxury. Choose from our refined 
+                                    pre-arranged collections or personalize your own to suit your 
+                                    exquisite taste. Elevate your experience with every sip and bite, 
+                                    where sophistication meets indulgence.
                                 </blockquote>
                             </div>
                         </div>
@@ -456,292 +458,235 @@
             </div>
             <div class="divider-l"></div>
 
+            <!--* SWIPER BASKET'S  -->
 
-<!--? SWIPER  -->
-
-
-<div class="swiper hs">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/Hamper_01.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$123,40</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Repite para las 12 otras anchetas -->
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-      <div class="swiper-slide">
-        <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-        <div class="h-content">
-          <div class="h-row">
-            <div class="h-details">
-              <span id="h-title">GIFT BASKET</span>
-              <p id="h-text">Premium selection</p>
-            </div>
-            <div class="h-price">$127,60</div>
-          </div>
-          <div class="h-buttons">
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- Agrega más swiper-slide según sea necesario -->
-
-
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-
-<!--! SWIPER  -->
-
-           <div class="h-wrapper">
-
-            <div class="h-card">
-                <img src="img/menu/hampers/Hamper_01.webp" alt="Clandestino Hampers">
-                <div class="h-content">
-                    <div class="h-row">
-                        <div class="h-details">
-                            <span id="h-title">GIFT BASKET </span>
-                            <p id="h-text">Premium selection</p>
+            <div class="swiper-container h-wrapper mySwiper" aria-label="Product Carousel">
+                <div class="swiper-wrapper">
+            
+                   <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-02.webp"  alt="Premium Selection Basket containing an exclusive selection of wines and gourmet products" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title"> Premium Selection</h3>
+                                    <p id="h-text">An exclusive selection of wines and gourmet products.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 330 dollars and 50 cents">$330.50</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Premium Selection Basket">Buy Now</button>
+                            </div>
                         </div>
-                        <div class="h-price">$123,40</div>
-                    </div>
-                    <div class="h-buttons">
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-            </div> <!-- card 01 -->
-
-            <div class="h-card">
-                <img src="img/menu/hampers/hamper_02.jpg" alt="Clandestino Hampers">
-                <div class="h-content">
-                    <div class="h-row">
-                        <div class="h-details">
-                            <span id="h-title">GIFT BASKET</span>
-                            <p id="h-text">Premium selection</p>
+                    </article>
+                    <!-- Repite esto para las demás anchetas -->
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-06.webp"  alt="Luxury Indulgence Basket for special occasions" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title"> Luxury Indulgence</h3>
+                                    <p id="h-text">Sophisticated delight for special occasions.</p>
+                                </div>
+                                <div class="h-price"  aria-label="Price: 321 dollars">$321</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Luxury Indulgence Basket">Buy Now</button>
+                            </div>
                         </div>
-                        <div class="h-price">$127,60 </div>
-                    </div>
-                    <div class="h-buttons">
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-            </div> <!-- card -->
-
-            <div class="h-card">
-                <img src="img/menu/hampers/hamper_03.jpg" alt="Clandestino Hampers">
-                <div class="h-content">
-                    <div class="h-row">
-                        <div class="h-details">
-                            <span id="h-title">GIFT BASKET</span>
-                            <p id="h-text"> Ultra Premium selection</p>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-12.webp" alt="Gourmet Experience Basket using carefully selected products" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title">Gourmet Experience</h3>
+                                    <p id="h-text">Gourmet experience using carefully selected products.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 225 dollars and 20 cents">$225.20</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Gourmet Experience Basket">Buy Now</button>
+                            </div>
                         </div>
-                        <div class="h-price">$330,50</div>
-                    </div>
-                    <div class="h-buttons">
-                        <button>Buy Now</button>
-                    </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-05.webp" alt="Elegant Delight Basket combining taste and quality in an elegant combination" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title">Elegant Delight</h3>
+                                    <p id="h-text">taste and quality in an elegant combination.  </p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 210 dollars and 50 cents">$210.50</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Elegant Delight Basket">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-07.webp" alt="Epicurean Basket, a wonderful gift for well-taste enthusiasts" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title">Epicurean Basket</h3>
+                                    <p id="h-text">Wonderful gift for well-taste enthusiasts.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 209 dollars and 75 cents">$209.75</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Epicurean Basket">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-08.webp" alt="Savory Collection Basket with a delicious collection of well-selected products" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title">Savory Collection</h3>
+                                    <p id="h-text" >A delicious collection of well selected products.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 208 dollars and 25 cents">$208.25</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Savory Collection Basket">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-11.webp" alt="Signature Hamper containing our quality seal in a single package" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title"> Signature Hamper</h3>
+                                    <p id="h-text">Our quality seal in a single package.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 198 dollars and 75 cents">$198.75</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Signature Hamper">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-03.webp"  alt="Artisan’s Choice Basket with handcrafted goods for a genuine experience" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title">Artisan’s Choice </h3>
+                                    <p id="h-text">Handcrafted goods for a genuine experience.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 193 dollars and 15 cents">$193.15</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Artisan’s Choice Basket">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-09.webp" alt="Exclusive Treat Basket with an exclusive line of gourmet products" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title"> Exclusive Treat </h3>
+                                    <p id="h-text">Exclusive line of gourmet products.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 149 dollars">$149</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Exclusive Treat Basket">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-01.webp" alt="Classic Basket containing a classic selection for a traditional gift" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title">Classic Basket</h3>
+                                    <p id="h-text">Classic selection for a traditional gift.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 127 dollars and 60 cents">$127.60</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Classic Basket">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-10.webp" alt="Deluxe Offering Basket combining price and quality in a premium deal" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <span id="h-title">Deluxe Offering</span>
+                                    <p id="h-text">A premium deal that combines price and quality.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 125 dollars and 90 cents"> $125.90</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Deluxe Offering Basket">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-07.webp" alt="Refined Selection Basket finely chosen for detail enthusiasts" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title">Refined Selection</h3>
+                                    <p id="h-text">Finely chosen for detail enthusiasts.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: 123 dollars and 40 cents">$123.40</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Buy Refined Selection Basket">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="swiper-slide h-card" role="article">
+                        <img src="img/menu/hampers/basket-13.webp" alt="Custom Hamper Basket, create a unique and personalized gift basket" loading="lazy">
+                        <div class="h-content">
+                            <div class="h-row">
+                                <div class="h-details">
+                                    <h3 id="h-title">Custom Hamper</h3>
+                                    <p id="h-text">Create a unique and personalized gift basket.</p>
+                                </div>
+                                <div class="h-price" aria-label="Price: Variable">$$$</div>
+                            </div>
+                            <div class="h-buttons">
+                                <button aria-label="Customize Your Hamper">Customize Now</button>
+                            </div>
+                        </div>
+                    </article>
+            
                 </div>
-            </div> <!-- card -->
-
-
-           </div>
+                <!-- Controles de navegación -->
+            <div class="swiper-button-prev" aria-label="Previous Slide">
+                <ion-icon name="caret-back-circle-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next" aria-label="Next Slide">
+                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination h-pagination" role="navigation" aria-label="Slide Pagination"></div>
+            </div>
+            
+            
+            
+                        <div class="divider-l"></div>
+           <!--! SWIPER BASKET'S  -->
         </div>
     </div>
     <div class="divider-xl"></div>
@@ -1772,7 +1717,7 @@
                                 <div class="owl-carousel" id="owl-carousel-news-1" aria-live="polite" role="list">
                                     <!-- section item start -->
                                     <figure class="section-item" role="listitem">
-                                        <img src="img/blog/gallery-1/swc-cata-invierno.webp" alt="Spanish Wine Club">
+                                        <img src="img/blog/gallery-1/swc-cata-invierno.webp" alt="Spanish Wine Club" loading="lazy">
                                         <!-- divider start -->
                                         <hr class="divider-m">
                                         <!-- divider end -->
@@ -1790,7 +1735,7 @@
                                     <!-- section item end -->
                                     <!-- section item start -->
                                     <figure class="section-item" role="listitem">
-                                        <img src="img/blog/gallery-1/swc-cata-otono.webp" alt="Spanish Wine Club">
+                                        <img src="img/blog/gallery-1/swc-cata-otono.webp" alt="Spanish Wine Club" loading="lazy">
                                         <!-- divider start -->
                                         <hr class="divider-m">
                                         <!-- divider end -->
@@ -1808,7 +1753,7 @@
                                     <!-- section item end -->
                                     <!-- section item start -->
                                     <figure class="section-item" role="listitem">
-                                        <img src="img/blog/gallery-1/swc-museum-wine.webp" alt="Spanish Wine Club">
+                                        <img src="img/blog/gallery-1/swc-museum-wine.webp" alt="Spanish Wine Club" loading="lazy">
                                         <!-- divider start -->
                                         <hr class="divider-m">
                                         <!-- divider end -->
@@ -1826,7 +1771,7 @@
                                     <!-- section item end -->
                                     <!-- section item start -->
                                     <figure class="section-item" role="listitem">
-                                        <img src="img/blog/gallery-1/swc-cups.webp" alt="Spanish Wine Club">
+                                        <img src="img/blog/gallery-1/swc-cups.webp" alt="Spanish Wine Club" loading="lazy">
                                         <!-- divider start -->
                                         <hr class="divider-m">
                                         <!-- divider end -->
@@ -1977,7 +1922,7 @@
                             <div class="owl-carousel" id="owl-carousel-news-2" aria-live="polite"  role="list">
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-cata-invierno.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-cata-invierno.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -1995,7 +1940,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-garnachas-salon.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-garnachas-salon.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2013,7 +1958,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-last.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-last.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2031,7 +1976,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-cata-wine.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-cata-wine.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2182,11 +2127,11 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <!-- carousel start -->
-                        <div class="carousel-item-img-wrapper carousel-item-img-wrapper-all">
+                        <div class="carousel-item--wrapper carousel-item--wrapper-all">
                             <div class="owl-carousel" id="owl-carousel-news-3" aria-live="polite" role="list">
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-red-win.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-red-win.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2204,7 +2149,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-museum-wine.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-museum-wine.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2222,7 +2167,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-cata-otono.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-cata-otono.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2240,7 +2185,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/savor-tradition.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/savor-tradition.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2398,7 +2343,7 @@
                             <div class="owl-carousel" id="owl-carousel-news-4" role="list" aria-live="polite">
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc_wine.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc_wine.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2416,7 +2361,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-cata-inv.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-cata-inv.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2434,7 +2379,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-cups.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-cups.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2452,7 +2397,7 @@
                                 <!-- section item end -->
                                 <!-- section item start -->
                                 <figure class="section-item" role="listitem">
-                                    <img src="img/blog/gallery-1/swc-museum.webp" alt="Spanish Wine Club">
+                                    <img src="img/blog/gallery-1/swc-museum.webp" alt="Spanish Wine Club" loading="lazy">
                                     <!-- divider start -->
                                     <hr class="divider-m">
                                     <!-- divider end -->
@@ -2727,7 +2672,7 @@
     <div class="container-footer">
         <div class="footer-section">
             <div class="logo-footer">
-                <img src="img/Clandestino_no_bg.svg" alt="The Clandestino Logo">
+                <img src="img/Clandestino_no_bg.png" alt="The Clandestino Logo" loading="lazy">
             </div>
             <div class="working-hours">
                 <h3>Working Hours</h3>
@@ -2740,9 +2685,9 @@
             <div class="contact-us">
                 <h3>Contact Us</h3>
                 <address>
-                    <p><img src="img/location.svg" alt="Location Icon" class="icon"> 211 N MT SHASTA BLVD, MOUNT SHASTA, CA 96067</p>
-                    <p><img src="img/email.svg" alt="Email Icon" class="icon"> <a href="mailto:info@theclandestino.com">info@theclandestino.com</a></p>
-                    <p><img src="img/phone.svg" alt="Phone Icon" class="icon"> <a href="tel:+14086090027">+1 408 609 00 27</a></p>
+                    <p><img src="img/location.svg" alt="Location Icon" class="icon" loading="lazy"> 211 N MT SHASTA BLVD, MOUNT SHASTA, CA 96067</p>
+                    <p><img src="img/email.svg" alt="Email Icon" class="icon" loading="lazy"> <a href="mailto:info@theclandestino.com">info@theclandestino.com</a></p>
+                    <p><img src="img/phone.svg" alt="Phone Icon" class="icon" loading="lazy"> <a href="tel:+14086090027">+1 408 609 00 27</a></p>
                 </address>
             </div>
             <div class="social-media">
@@ -2750,12 +2695,12 @@
                 <ul class="social-icons">
                     <li>
                         <a href="https://www.facebook.com/Nicolas%20Tena" target="_blank" class="social-icon face" aria-label="Facebook">
-                            <img src="img/facebook.svg" alt="Facebook">
+                            <img src="img/facebook.svg" alt="Facebook" loading="lazy">
                         </a>
                     </li>
                     <li>
                         <a href="https://api.whatsapp.com/send?phone=+14086090027&text=Greetings%20from%20Clandestino%20Social%20chat%20room.%20Please%20leave%20a%20message,%20and%20we%20will%20get%20in%20touch%20with%20you%20right%20away." target="_blank" class="social-icon wats" aria-label="WhatsApp">
-                            <img src="img/wats.svg" alt="WhatsApp">
+                            <img src="img/wats.svg" alt="WhatsApp" loading="lazy">
                         </a>
                     </li>
                 </ul>
@@ -2840,6 +2785,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js" integrity="sha512-yG5avRhg8AWY1BsP/N//3vL3l74jbsQHivqAXOx7KB3agFQzFbeubQr9zYBinQ8+Iwsebv2s2+muvA9fMw/Ebg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
        <!-- * Swiper-->
+       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/js/swiper.min.js" integrity="sha512-TwwEqsITZYEUlYYaz/ViL25qeDYpPqmcsHc/qvlNeLL03Pscs045Mk9FZPfisOqoE38vORTbvyNp1EO06c5y4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <!--* Magnific Popup v1.1.0  -->
@@ -2856,7 +2802,8 @@
 
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
         <script src="js/utils.js"></script>
 
@@ -2867,7 +2814,7 @@
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "name": "Clandestino Tapas & Wine",
-      "image": "https://theclandestino.com/img/Clandestino_menu.svg",
+      "image": "https://theclandestino.com/img/clandestino.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "211 N MT SHASTA BLVD",
