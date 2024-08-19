@@ -331,7 +331,7 @@ $(document).ready(function() {
         let card = document.createElement('div');
         card.className = 'wine-card';
         card.innerHTML = `
-            <img src="${wine.image}" alt="${wine.name}" class="wine-img">
+            <img src="${wine.image}" alt="${wine.name}" class="wine-img" loading="lazy" >
             <h3>${wine.name}</h3>
             <p><strong>Reference: <br></strong> ${wine.reference}</p>
             <p><strong>Region:<br></strong> ${wine.region}</p>
