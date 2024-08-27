@@ -493,7 +493,50 @@ function initSwiper() {
   window.addEventListener('resize', initSwiper);
 
 
+ //* BOTON SECCION CHOCOLATES
 
+  // Selecciona todos los botones "Buy Now" en la sección de chocolates
+  const chocoButtons = document.querySelectorAll('.choco-buttons button');
+
+  // Itera sobre cada botón
+  chocoButtons.forEach(function(cbutton) {
+      cbutton.addEventListener('click', function() {
+          let clientName = '';
+  
+          // Bucle que sigue pidiendo el nombre hasta que se ingrese o se cancele la operación
+          while (!clientName) {
+              clientName = prompt("To continue with your purchase, please enter your name:");
+  
+              if (clientName === null) {  // Si se presiona cancelar
+                  alert("Purchase canceled");
+                  return;  // Salir de la función si se cancela
+              }
+  
+              if (clientName.trim() === '') {  // Si se presiona aceptar sin escribir nada
+                  alert("You must type your name in order to continue.");
+                  clientName = '';  // Reiniciar clientName para continuar el bucle
+              }
+          }
+  
+          // Encuentra el contenedor más cercano a este botón
+          let chococard = cbutton.closest('.choco-card');
+          
+          // Captura los textos de las etiquetas span, p y el precio dentro de esta tarjeta específica
+          let title = chococard.querySelector('#choco-title').textContent;
+          let description = chococard.querySelector('#choco-text').textContent;
+          let price = chococard.querySelector('.choco-price').textContent;
+  
+          // Formatear el mensaje de WhatsApp
+          let whatsappMessage = `Hello, I am ${clientName} and i came from TheClandestino.com. I am interested in purchasing the ${title} (${description})  chocolate for the price of ${price}, please.`
+  
+          // Codificar el mensaje para la URL de WhatsApp
+          let encodedMessage = encodeURIComponent(whatsappMessage);
+  
+          // Redirigir al chat de WhatsApp
+          window.open(`https://wa.me/14086090027?text=${encodedMessage}`, '_blank');
+      });
+  });
+  
 
 
 
