@@ -81,19 +81,19 @@ html {
 /* 1. TEMPLATE BACKGROUNDS */
 /* 1.1. fullscreen slider BACKGROUND */
 .bg-img-1 {
-  background-image: url(../img/background/theclandestino.webp);
+  background-image: url(../img/background/the-clandestino-usa.jpg);
 }
 
 .bg-img-2 {
-  background-image: url(../img/background/theclandestino-bg-01.webp);
+  background-image: url(../img/background/clandestino-friends.jpg);
 }
 
 .bg-img-3 {
-  background-image: url(../img/background/theclandestino-bg-02.webp);
+  background-image: url(../img/background/clandestino-tapas.jpg);
 }
 
 .bg-img-4 {
-  background-image: url(../img/background/theclandestino-bg-03.webp);
+  background-image: url(../img/background/clandestino-wine-friends.jpg);
 }
 
 
@@ -111,11 +111,11 @@ html {
 
 /* 1.3. about IMG BACKGROUND */
 .about-bg-1 {
-  background-image: url(../img/about/clandestino-taste-01.webp);
+  background-image: url(../img/about/the-clandestino-flavor.jpeg);
 }
 
 .about-bg-2 {
-  background-image: url(../img/about/clandestino-taste-02.webp);
+  background-image: url(../img/about/the-clandestino-tapas.jpeg);
 }
 
 
@@ -144,21 +144,21 @@ background-image: url(../img/about/team/5.jpg);
 
 /* 1.5. services benefits IMG BACKGROUND */
 .img-fullwidth-benefits-carousel-1 {
-  background-image: url(../img/services/benefits/Tapas.webp);
+  background-image: url(../img/services/benefits/clandestino-tapas.jpeg);
 }
 
 .img-fullwidth-benefits-carousel-2 {
-  background-image: url(../img/services/benefits/some-food.webp);
+  background-image: url(../img/services/benefits/clandestino-tapas-wine.jpeg);
 }
 
 
 /* 1.6. services offers IMG BACKGROUND */
 .img-fullwidth-offers-carousel-1 {
-  background-image: url(../img/services/offers/Taste.webp);
+  background-image: url(../img/services/offers/clandestino-queso.jpeg);
 }
 
 .img-fullwidth-offers-carousel-2 {
-  background-image: url(../img/services/offers/Food.webp);
+  background-image: url(../img/services/offers/clandestino-food.jpeg);
 }
 
 
@@ -190,11 +190,11 @@ background-image: url(../img/menu/5.jpg);
 
 /* 1.8. news IMG BACKGROUND */
 .news-bg-1 {
-  background-image: url(../img/blog/gallery-1/joint-the-club-left.webp);
+  background-image: url(../img/blog/gallery-1/join-the-club.jpeg);
 }
 
 .news-bg-2 {
-  background-image: url(../img/blog/gallery-1/spanish-elegance.webp);
+  background-image: url(../img/blog/gallery-1/spanish-elegance.jpg);
 }
 
 .news-bg-3 {
@@ -9775,5 +9775,274 @@ h4.h4-comments {
   color: #b2b2b2;
 }
 
+
+/* SWC Subscription Cards */
+.suscription-card {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.suscription-card .row {
+    --card-min-width: 280px;
+    --card-max-width: 400px;
+}
+
+.swc-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: var(--card-min-width);
+    max-width: var(--card-max-width);
+    margin: 0 auto;
+}
+
+.swc-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.swc-card .card-header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.swc-card .card-header h3 {
+    font-family: 'Brittany', serif;
+    color: #e0e0e0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.swc-card .price {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.swc-card .price .currency {
+    font-size: 1.5rem;
+    vertical-align: super;
+}
+
+.swc-card .price .amount {
+    font-size: 3.5rem;
+    font-family: 'Brittany', serif;
+}
+
+.swc-card .benefits-list {
+    list-style: none;
+    padding: 30px 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.swc-card .benefits-list li {
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.swc-card .benefits-list li i {
+    color: #c5a47e;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.swc-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    white-space: normal;
+    line-height: 1.2;
+}
+
+.gold-btn {
+    background: linear-gradient(45deg, #c5a47e, #deb887);
+    color: #111;
+}
+
+.diamond-btn {
+    background: linear-gradient(45deg, #a8c5c7, #86a8b6);
+    color: #111;
+}
+
+.gold-btn:hover, .diamond-btn:hover {
+    opacity: 0.9;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+.gold {
+    border: 1px solid rgba(197, 164, 126, 0.3);
+}
+
+.diamond {
+    border: 1px solid rgba(168, 197, 199, 0.3);
+}
+
+/* Estilos compartidos para desktop y tablet */
+@media (min-width: 768px) {
+    .membership-row {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .membership-row [class*="col-"] {
+        padding: 0;
+    }
+
+    .swc-card {
+        height: 100%;
+        margin: 0;
+    }
+}
+
+/* Estilos específicos para tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .suscription-card {
+        padding: 40px 20px;
+        background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .suscription-card .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .suscription-card .col-md-6 {
+        padding: 0 10px;
+        margin-bottom: 0;
+    }
+
+    .swc-card {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        padding: 30px 25px;
+        text-align: center;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .swc-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .swc-card .card-header {
+        margin-bottom: 1px;
+        padding-bottom: 2px;
+    }
+
+    .swc-card .card-header h3 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 0.5px;
+    }
+    
+    .swc-card .price {
+        margin: 20px 0;
+    }
+
+    .swc-card .price .amount {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .swc-card .benefits-list {
+        margin: 25px 0;
+        padding: 0 10px;
+    }
+
+    .swc-card .benefits-list li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        margin-bottom: 12px;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .swc-card .benefits-list li i {
+        margin-right: 10px;
+        font-size: 1.1rem;
+    }
+
+    .swc-btn {
+        width: 100%;
+        max-width: 250px;
+        margin: 20px auto 0;
+        padding: 12px 24px;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .swc-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 767px) {
+    .suscription-card {
+        padding: 20px;
+    }
+    
+    .swc-card {
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .swc-card .benefits-list li {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .swc-card {
+        padding: 20px;
+    }
+
+    .swc-card .card-header h3 {
+        font-size: 1.8rem;
+    }
+
+    .swc-card .benefits-list li {
+        font-size: 0.9rem;
+    }
+
+    .swc-btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
 
 /* END */

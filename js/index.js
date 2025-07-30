@@ -762,4 +762,39 @@ slides.forEach((slide, index) => {
   slide.addEventListener("click", () => showSlide(index));
 });
 
+/** SWC Subscription Cards */
+document.addEventListener('DOMContentLoaded', () => {
+    const subscriptionCards = document.querySelectorAll('.swc-card');
+    
+    // Add animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    subscriptionCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        observer.observe(card);
+    });
+
+    // Enhance WhatsApp links
+    const whatsappLinks = document.querySelectorAll('.swc-btn');
+    whatsappLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const currentText = link.textContent.trim();
+            link.textContent = 'Redirecting to WhatsApp...';
+            setTimeout(() => {
+                link.textContent = currentText;
+            }, 2000);
+        });
+    });
+});
+
 /** WINE CARDS*/
